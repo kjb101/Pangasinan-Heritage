@@ -39,5 +39,5 @@ npm run build
 
 
 # Project Title: Pangasinan Heritage
-# Student Name: Karen Joy Balesteros
+# Student Name: Karen Joy Ballesteros
 # Selected Framework: Next.js
