@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL
+
 export const heritageSites = [
 
   // =====================================================
@@ -6,16 +8,12 @@ export const heritageSites = [
 
   {
     id: 1,
-
     slug: "hundred-islands",
-
     name: "Hundred Islands National Park",
-
     location: "Alaminos City",
-
     category: "Natural Heritage",
 
-    image: "/images/hundred-islands.jpg",
+    image: `${base}images/hundred-islands.jpg`,
 
     description:
       "Hundred Islands National Park is one of Pangasinan's most recognized natural attractions, featuring numerous limestone islands and islets surrounded by the waters of the Lingayen Gulf.",
@@ -45,16 +43,12 @@ export const heritageSites = [
 
   {
     id: 2,
-
     slug: "manaoag-basilica",
-
     name: "Minor Basilica of Our Lady of the Rosary of Manaoag",
-
     location: "Manaoag",
-
     category: "Religious Heritage",
 
-    image: "/images/manaoag-basilica.jpg",
+    image: `${base}images/manaoag-basilica.jpg`,
 
     description:
       "The Minor Basilica of Our Lady of the Rosary of Manaoag is one of Pangasinan's most important religious destinations and a major pilgrimage site.",
@@ -84,16 +78,12 @@ export const heritageSites = [
 
   {
     id: 3,
-
     slug: "cape-bolinao-lighthouse",
-
     name: "Cape Bolinao Lighthouse",
-
     location: "Bolinao",
-
     category: "Architectural Heritage",
 
-    image: "/images/cape-bolinao-lighthouse.jpg",
+    image: `${base}images/cape-bolinao-lighthouse.jpg`,
 
     description:
       "Cape Bolinao Lighthouse is a historic coastal landmark overlooking the West Philippine Sea and is one of Bolinao's recognizable attractions.",
@@ -116,22 +106,19 @@ export const heritageSites = [
     ]
   },
 
+
   // =====================================================
   // 4. BONUAN BLUE BEACH
   // =====================================================
 
   {
     id: 4,
-
     slug: "bonuan-blue-beach",
-
     name: "Bonuan Blue Beach",
-
     location: "Dagupan City",
-
     category: "Natural Heritage",
 
-    image: "/images/bonuan-beach.jpg",
+    image: `${base}images/bonuan-beach.jpg`,
 
     description:
       "Bonuan Blue Beach is a popular coastal destination in Dagupan City known for its beach scenery and recreational activities.",
@@ -161,16 +148,12 @@ export const heritageSites = [
 
   {
     id: 5,
-
     slug: "casa-real",
-
     name: "Casa Real",
-
     location: "Lingayen",
-
     category: "Historical Heritage",
 
-    image: "/images/casa-real.jpg",
+    image: `${base}images/casa-real.jpg`,
 
     description:
       "Casa Real is a historic landmark in Lingayen associated with the administrative and architectural history of Pangasinan.",
@@ -200,16 +183,12 @@ export const heritageSites = [
 
   {
     id: 6,
-
     slug: "st-john-cathedral",
-
     name: "St. John the Evangelist Cathedral",
-
     location: "Dagupan City",
-
     category: "Religious Heritage",
 
-    image: "/images/st-john-cathedral.jpg",
+    image: `${base}images/st-john-cathedral.jpg`,
 
     description:
       "St. John the Evangelist Cathedral is an important Catholic church and religious landmark in Dagupan City.",
@@ -239,16 +218,12 @@ export const heritageSites = [
 
   {
     id: 7,
-
     slug: "balingasay-river",
-
     name: "Balingasay River",
-
     location: "Bolinao",
-
     category: "Natural Heritage",
 
-    image: "/images/balingasay-river.jpg",
+    image: `${base}images/balingasay-river.jpg`,
 
     description:
       "Balingasay River is a scenic river ecosystem in Bolinao known for its mangroves, biodiversity, and natural environment.",
