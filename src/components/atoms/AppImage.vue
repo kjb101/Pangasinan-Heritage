@@ -1,7 +1,7 @@
 <template>
   <img
     class="app-image"
-    :src="src"
+    :src="resolvedSrc"
     :alt="alt"
     :loading="loading"
     :width="width"
@@ -10,7 +10,9 @@
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
   src: {
     type: String,
     required: true
@@ -35,6 +37,13 @@ defineProps({
     type: [String, Number],
     default: 500
   }
+})
+
+// Prepend Vite's base URL (e.g. '/Pangasinan-Heritage/') so image
+// paths resolve correctly whether running locally or on GitHub Pages.
+const resolvedSrc = computed(() => {
+  const cleanPath = props.src.replace(/^\//, '')
+  return `${import.meta.env.BASE_URL}${cleanPath}`
 })
 </script>
 
